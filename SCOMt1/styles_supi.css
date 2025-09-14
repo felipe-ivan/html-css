@@ -1,0 +1,123 @@
+/* Estilo geral para o corpo do site */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0d0d0d;
+    color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para a barra de navegação */
+nav {
+    background-color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.1em;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #b5651d;
+    color: #fff;
+}
+
+/* Estilo para as seções de conteúdo */
+.supi-career-section, .supi-game-section, .magnus-reaction-section, .magnus-video-section {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    border-radius: 8px;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    gap: 40px;
+}
+
+/* Inversão de layout para algumas seções */
+.reverse-layout {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -moz-box-orient: horizontal;
+    -moz-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    -webkit-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+}
+
+/* Estilo para textos nas seções */
+.supi-career-info, .supi-game-info, .magnus-reaction-info, .magnus-video-info {
+    flex: 1;
+    text-align: left;
+}
+
+.supi-career-info h2, .supi-game-info h2, .magnus-reaction-info h2, .magnus-video-info h2 {
+    color: #fff;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.supi-career-info p, .supi-game-info p, .magnus-reaction-info p, .magnus-video-info p {
+    color: #ddd;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Estilo para as imagens com bordas douradas */
+.supi-img, .chess-img, .Magnus_vs_Supi-img, .magnus-video {
+    border-radius: 12px;
+    border: 8px solid #d4af37;
+    object-fit: cover;
+    -webkit-object-fit: cover;
+}
+
+/* Ajustes de tamanhos para cada tipo de mídia */
+.supi-img, .chess-img, .Magnus_vs_Supi-img {
+    width: 250px;
+    height: 250px;
+}
+
+.magnus-video {
+    width: 350px;
+    height: 250px;
+    background-color: #000;
+}
+
+/* Estilo para o rodapé */
+footer {
+    background-color: #222;
+    color: #f4f4f4;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 3px solid #b5651d;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #ccc;
+}
