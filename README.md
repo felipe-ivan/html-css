@@ -9,7 +9,7 @@ O site conta com as funcionalidades abaixo:
 5 Acessibilidade: navegação por teclado e práticas inclusivas aplicadas.
 6 Interatividade: animações e transições em menus e elementos.
 7 Formulários com validação: inscrição em campeonato com verificação de nome, idade, CPF, contato e modalidade, com mensagens de erro personalizadas.
-8 Inclusão de multimídia: imagens e vídeo responsivo com poster, preload otimizado e fallback para navegadores antigos.
+8 Inclusão de multimídia: imagens e vídeo responsivo com poster, preload otimizado e fallback para navegadores antigos..
 
 A esstrutura das páginas segue o esquema:
 Página inicial: apresentação do site, cabeçalho com imagem e seções de conteúdo.
