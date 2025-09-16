@@ -1,5 +1,4 @@
-/* Estilo geral para o corpo do site */
-body {
+body { /* Estilo geral*/
     font-family: Arial, sans-serif;
     background-color: #0d0d0d;
     color: #f4f4f4;
@@ -7,8 +6,7 @@ body {
     padding: 0;
 }
 
-/* Estilo para a barra de navegação */
-nav {
+nav { /* Barra de navegação */
     background-color: #fff;
     padding: 10px 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -41,7 +39,18 @@ nav ul li a:hover {
     color: #fff;
 }
 
-/* Estilo para as seções de conteúdo */
+.supi-img, .chess-img { /* Destaque imagem cursor */
+    transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease, border-color 0.25s ease;
+}
+
+.supi-img:hover, .chess-img:hover {
+    transform: translateY(-2px) scale(1.04);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35);
+    filter: saturate(1.08) contrast(1.04);
+    border-color: #e0c25e;
+}
+
+/* Estilo seções */
 .supi-career-section, .supi-game-section, .magnus-reaction-section, .magnus-video-section {
     display: -webkit-box;
     display: -moz-box;
@@ -56,6 +65,20 @@ nav ul li a:hover {
     max-width: 1200px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     gap: 40px;
+    transition: background-color 0.25s ease, box-shadow 0.25s ease, transform 0.2s ease;
+}
+
+/* Realce vermelho */
+.supi-career-section:hover,
+.supi-game-section:hover,
+.magnus-reaction-section:hover,
+.magnus-video-section:hover,
+.supi-career-section:focus-within,
+.supi-game-section:focus-within,
+.magnus-reaction-section:focus-within,
+.magnus-video-section:focus-within {
+    background-color: #3a3a3a;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35), 0 0 0 3px rgba(123, 0, 28, 0.5) inset;
 }
 
 /* Inversão de layout para algumas seções */
@@ -69,7 +92,7 @@ nav ul li a:hover {
     flex-direction: row-reverse;
 }
 
-/* Estilo para textos nas seções */
+/* Estilo textos */
 .supi-career-info, .supi-game-info, .magnus-reaction-info, .magnus-video-info {
     flex: 1;
     text-align: left;
@@ -87,7 +110,7 @@ nav ul li a:hover {
     line-height: 1.6;
 }
 
-/* Estilo para as imagens com bordas douradas */
+/* Estilo imagens */
 .supi-img, .chess-img, .Magnus_vs_Supi-img, .magnus-video {
     border-radius: 12px;
     border: 8px solid #d4af37;
@@ -95,7 +118,7 @@ nav ul li a:hover {
     -webkit-object-fit: cover;
 }
 
-/* Ajustes de tamanhos para cada tipo de mídia */
+/* Ajustes de tamanhos para tipos de mídia */
 .supi-img, .chess-img, .Magnus_vs_Supi-img {
     width: 250px;
     height: 250px;
@@ -107,7 +130,12 @@ nav ul li a:hover {
     background-color: #000;
 }
 
-/* Estilo para o rodapé */
+.Magnus_vs_Supi-img {
+    width: 350px;
+    height: 250px;
+}
+
+/* Estilo rodapé */
 footer {
     background-color: #222;
     color: #f4f4f4;
